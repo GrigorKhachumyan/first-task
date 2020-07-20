@@ -274,11 +274,13 @@ export default function Shop() {
       stateObj.itemName = "Тraining apparat";
     }
     setState(stateObj);
+    setChangeArr([]);
   };
   const setInputValue = (e) => {
     let stateObj = { ...state };
     stateObj.inputValue = e.target.value;
     setState(stateObj);
+    setChangeArr([]);
   };
   return (
     <div className="shop-body">
